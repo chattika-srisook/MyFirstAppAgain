@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MyFirstAppAgain</string>
+    <string name="Aboutme">aboutme</string>
+    <string name="Contact">contact</string>
+    <string name="List">list</string>
 </resources>
