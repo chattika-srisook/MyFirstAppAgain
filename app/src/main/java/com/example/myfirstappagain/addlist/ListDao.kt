@@ -12,5 +12,5 @@ interface ListDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(name:String,email:String)
     @Query("select * from listTable order by id desc")
-    fun getList():LiveData<List<ListDB>>
+    fun getList():LiveData<List<ListData>>
 }

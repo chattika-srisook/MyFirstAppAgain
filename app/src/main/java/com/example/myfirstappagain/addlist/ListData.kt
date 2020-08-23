@@ -5,10 +5,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "listTable")
-data class ListDB (
+data class ListData (
     @PrimaryKey(autoGenerate = true)
     var id:Int,
-    @ColumnInfo(name = "Name" ,defaultValue = "unknow")
+    @ColumnInfo(name = "name" ,defaultValue = "unknown")
     var name:String,
     @ColumnInfo(name = "email")
     var email:String
