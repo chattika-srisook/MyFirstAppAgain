@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "AddListTable")
-data class AddListData (
+data class AddListDataTable (
     @PrimaryKey(autoGenerate = true)
     var id:Int,
     @ColumnInfo(name = "Name",defaultValue = "Unknown")

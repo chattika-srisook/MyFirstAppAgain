@@ -12,5 +12,5 @@ interface AddListDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(name:String,email:String)
     @Query("select * from AddListTable order by id desc")
-    fun getAddContact(): LiveData<List<AddListData>>
+    fun getAddContact(): LiveData<List<AddListDataTable>>
 }

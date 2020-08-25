@@ -7,4 +7,8 @@
     <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bio">ชื่อ ฉัตติกา ศรีสุข  ชื่อเล่นนํ้าผึ้ง อยู่สาขาวิทยาการคอมพิวเตอร์</string>
+    <string name="email">chattikasrisook259@gmail.com</string>
+    <string name="emaill">chattikasrisook259@gmail.com</string>
+    <string name="co">Contact</string>
 </resources>
