@@ -3,13 +3,12 @@ package com.example.myfirstappagain
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.myfirstappagain.Fragment.List.AddListFragment
 import com.example.myfirstappagain.databinding.ActivityMainBinding
-import com.google.android.material.internal.NavigationMenuView
 import com.google.android.material.navigation.NavigationView
 
 
@@ -55,7 +54,9 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
                 supportFragmentManager.beginTransaction().replace(R.id.fragment_contain,ContactFragment()).commit()
             }
             R.id.nav_list ->{
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_contain,AddListFragment()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.fragment_contain,
+                    AddListFragment()
+                ).commit()
             }
         }
         drawer_layout.closeDrawer(GravityCompat.START)

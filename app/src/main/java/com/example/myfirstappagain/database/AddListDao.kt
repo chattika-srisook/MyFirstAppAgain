@@ -1,4 +1,4 @@
-package com.example.myfirstappagain.addlist
+package com.example.myfirstappagain.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -8,9 +8,9 @@ import androidx.room.Query
 
 
 @Dao
-interface ListDao {
+interface AddListDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(name:String,email:String)
-    @Query("select * from listTable order by id desc")
-    fun getList():LiveData<List<ListData>>
+    @Query("select * from AddListTable order by id desc")
+    fun getAddContact(): LiveData<List<AddListData>>
 }
